@@ -1,0 +1,207 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+html{
+	background-image:url('https://images.pexels.com/photos/10295283/pexels-photo-10295283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Raleway', Arial, sans-serif;
+	color:#5b6f7c;
+	text-align: center;
+	max-width: 1550px;
+}
+main{
+	margin:3em 2em 2em 2em;
+}
+
+h2, h4{
+	text-transform: uppercase;
+	color:#ffffff9c;
+}
+
+h3{
+	font-size: 1.6em;
+}
+
+button, input, ul{
+	all:unset;
+}
+a {
+	text-decoration:none;
+	color:rgba(255, 255, 255, 0.605);
+}
+a:hover{
+	color:#cd853f;
+}
+li {
+	list-style: none;
+}
+img {
+	height: 75vh;
+	padding:2em
+
+}
+
+header {
+	width: 100%;
+	background-image: url('./assets/images/dk2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	text-shadow: #db8b30d1 1px 0 10px;
+	padding: 0 0 225px 0;
+	display: flex;
+}
+
+nav {
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+nav h1 {
+	width: 50%;
+	font-size: 1.2em;
+}
+
+.material-symbols-outlined {
+	vertical-align: bottom;
+
+}
+
+.button {
+height: 3em;
+padding-inline: 2em;
+border: 3px dotted #cd853f;
+}
+
+/*****HOME PAGE**********/
+
+.form {
+	margin: 0 0 0 5%;
+	display: flex;
+	border:3px solid green;
+}
+
+.form form {
+	margin-left: 2%;
+	margin-top: 6px;
+	display: flex;
+	border:3px solid green;
+}
+
+input{
+	height:3em;
+	width:50% ;
+	border:3px dotted #cd853f;
+	border-right:none;
+}
+input::placeholder{
+	opacity:0.7;
+	font-style: italic;
+}
+
+
+.searchBox {
+	width: 45%;
+	margin: 2em auto 0;
+	padding: 2%;
+	max-width: 500px;
+}
+.list #list {
+	width: 45%;
+	display: inline-block;
+	padding: 2%;
+	vertical-align: top;
+}
+.list #list li {
+	list-style: none;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.list #result {
+	margin-left: 5%;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0 2% 20px;
+}
+
+
+
+.list .hide {
+	display: none;
+}
+
+/****DETAIL PAGE *****/
+
+.film-infos{
+	background-color:black;
+	border: 1px solid #cd863fbf;
+	margin: 0 auto;
+	width:80%;
+	display:flex;
+}
+.film-infos-text{
+	padding:2em;
+}
+
+.backToHomePage{
+	padding:0.7em;
+	padding-inline:2em;
+	margin-top:4em;
+	display:inline-block;
+	border-radius: 2px;
+	background-color:#5b6f7c92;
+	color:#ffffff;
+}
+.backToHomePage:hover{
+	opacity:0.8;
+	color:#ffffff;
+}
+/****  GESTION RAPIDE TABLETTES ****/
+@media only screen and (max-width: 1023px){
+	nav h1{
+		width:100%;
+	}
+	img{
+		height:100%;
+	}
+	.film-infos{
+		flex-direction:column;
+	}
+	.film-infos-text{
+		padding-top:0;
+	}
+
+}
+
+
+/****  GESTION RAPIDE MOBILES ****/
+@media only screen and (max-width: 768px){
+
+	input{
+		margin-bottom: 1em;
+		width:100% ;
+		border-right:3px dotted #cd853f;
+	}
+	.button{
+		width:100%;
+		padding-inline:0;
+		border:none;
+		border-radius: 2px;
+		background-color:#cd853f;
+		color:#ffffff;
+	}
+	.button:active{
+		opacity:0.8;
+	}
+
+}
