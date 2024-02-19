@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 html{
-	background-image:url('https://images.pexels.com/photos/10295283/pexels-photo-10295283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-image:url('https://images.pexels.com/photos/4722571/pexels-photo-4722571.jpeg');
+	background-size: cover;
+	font-size:125%;
 }
 
 body {
@@ -53,7 +55,7 @@ header {
 	background-position: center;
 	color: #ffffff;
 	text-shadow: #db8b30d1 1px 0 10px;
-	padding: 0 0 225px 0;
+	padding: 0 0 250px 0;
 	display: flex;
 }
 
@@ -61,11 +63,10 @@ nav {
 	width: 100%;
 	background-color: #000000;
 	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 }
 nav h1 {
-	width: 50%;
+	width: 40%;
 	font-size: 1.2em;
 }
 
@@ -78,6 +79,9 @@ nav h1 {
 height: 3em;
 padding-inline: 2em;
 border: 3px dotted #cd853f;
+}
+footer p{
+	color: #ffff;
 }
 
 /*****HOME PAGE**********/
